@@ -1,0 +1,50 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+body{
+    min-height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+}
+h2{
+    text-align: center;
+}
+.contenedor{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 2rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+
+}
+
+/*MEDIA OBJECT*/
+.contenendor-comentario{
+    display: flex;
+    align-items: flex-start;
+}
+
+.contenendor-comentario .avatar{
+    margin-right: 1rem;
+}
+
+.avatar{
+    max-width: 90px;
+    border-radius: 50px;
+}
+
+.segundo-nivel{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
